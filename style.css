@@ -1,0 +1,431 @@
+:root{
+    --font-color:white;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: raleway;
+  
+    background: linear-gradient(rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)), url('/img/441246.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+}
+.container{
+    opacity: 1;
+    transition: 1000ms;
+    transform: translateX(0);
+    transform-origin:left ;
+}
+html.is-animating .container{
+    opacity: 1;
+    transform: translateX(100%);
+}
+html.is-leaving .container{
+    opacity: 0;
+}
+
+
+/* body :not(div , p, ul,li,h1,h2,ul,a,h3, p,i){
+    filter: blur(5px);
+} */
+h2{
+    text-align: justify;
+    margin-left: 125px;
+    font-size:15px;
+    line-height: 25px;
+    font-weight: 20px;
+    
+}
+h1{
+    color: white;
+    font-weight: lighter;
+}
+div{
+    borer: 1px solid white;
+}
+ 
+
+.container{
+    margin: 0 auto;
+width: 80%;
+display: flex;
+height: 750px;
+margin-top:30px;
+box-shadow: grey 0px 7px 29px 0px;
+
+
+
+
+}
+.sidebar-container{
+    width: 20%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  
+      
+  
+  }
+  .sidebar-container:hover{
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(0%);
+    
+}
+
+.main{
+    width: 80%;
+    /*background: rgba(0, 0, 0, 0.5);*/
+    background: linear-gradient(rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)), url('/img/441246.jpg');
+    overflow: scroll;
+    scroll-behavior: inherit;
+   
+    
+    
+}
+
+
+.main-about{
+    width: 80%;
+    /*background: rgba(0, 0, 0, 0.5);*/
+    background: linear-gradient(rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)), url('/img/441246.jpg');
+    
+    
+}
+.main-music{
+    width: 80%;
+    /*background: rgba(0, 0, 0, 0.5);*/
+    background: linear-gradient(rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)), url('/img/441246.jpg');
+   
+    
+    
+}
+.profile{
+    margin-top: 30%;
+}
+.profile-container{
+    width: 150PX;
+    height: 150px;
+    border-radius:50%;
+    background:url('Rihanna.png');
+    background-size:contain;
+    border: 3px solid #ff6600;
+ 
+}
+.nav{
+    padding:0%;
+    margin-top: 0%;
+    margin-bottom: 10%;
+}
+.nav ul{
+display: flex;
+flex-direction: column;
+padding-left: 0%;
+align-items: center;
+
+
+}
+.nav li{
+margin: 10px 0px;
+}
+.active{
+    color: #ff6600 !important;
+   
+    border-bottom: 2px solid #ff6600 !important;
+}
+.nav li a{
+    color: white;
+    text-decoration: none;
+  padding:4px;
+    font-size: 13px;
+    font-family: raleway;
+    font-weight: bold;
+ 
+}
+.nav li a:hover{
+
+color:#f57c02;
+}
+.nav li a:active{
+
+color:#f57c02;
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.icon{
+    background: #ff6600;
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+    margin: 5px;
+}
+.main {
+    text-align: right;
+    padding-right:150px ;
+    color: white;
+    padding-top: 30%;
+}
+.main p{
+    color: #ff6600;
+    font-size:40px;
+    padding-bottom: 0%;
+    margin-bottom:0%;
+    margin-right: 15px;
+    text-align: left;
+    margin-left: 125px;
+}
+.main h1{
+    font-size:150px;
+    font-weight: bolder;
+    margin: 0%;
+}
+.main h3{
+    font-size:30px;
+    font-weight: lighter;
+    margin-top: 0%;
+    padding-top: 0%;
+}
+
+.main-about H1 {
+
+    font-size:140px;
+    font-weight: bolder;
+    margin: 20%;
+    position: relative;
+    top:6%;
+    left:-40%;
+    opacity: 0.2;
+  transform: rotate(90deg);
+}
+.main-about h3{
+color: #f57c02;
+font-size: 50px;
+position: relative;
+top: -45%;
+left: 67%;
+}
+.main-about p{
+    color: white;
+    text-align: right;
+    line-height: 28px;
+    padding-left: 250px;
+    padding-right:30px;
+    position: relative;
+    top: -50%;
+    right: 2%;
+
+}
+.main-music {
+    text-align: right;
+    padding-right:150px ;
+    color: white;
+    padding-top: 20%;
+    overflow: scroll;
+    scroll-behavior: inherit;
+}
+.main-music h2{
+line-height: 30px;
+font-weight: 400;
+}
+ a{
+color: #ff6600;
+
+}
+.music-gallery >div{
+    brder: 2px solid white;
+}
+.music-gallery{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    height: 400px;
+    gap: 5%;
+    margin-left: 15%;
+    margin-right: 0%;
+    margin-top: 5%;
+    margin-bottom: 20%;
+}
+.album-one{
+    background: url('loud.jpeg');
+    background-size: contain;
+  overflow: hidden;
+  display: flex;
+    
+  align-items: flex-end;
+}
+.album-two{
+    background: url('naked.webp');
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+.album-three{
+    background: url('anti.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+.album-four{
+    background: url('fearless.png');
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+.album-five{
+    background: url('vibe.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+.album-six{
+    background: url('rihanna.jpeg');
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+.img{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  
+      
+  
+  }
+  .img:hover{
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(0%);
+      border: 1px solid #ff6600;
+      box-shadow: grey 0px 7px 29px 0px;
+    
+}
+.album-info{
+    background: black;
+    width: 100%;
+  height: 50px;
+  
+
+   
+    
+}
+.album-info{
+    display: flex;
+}
+.album-info h3{
+ text-align: left;
+ color: #ff6600;
+ margin-left: 5px;
+}
+.album-info p{
+   margin-left: 0%; 
+   float: right;
+   font-size: 10px;
+}
+
+
+
+
+/* for mobile resposive */
+
+@media (max-width: 428px) {
+    body{
+        background: black;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0%;
+       
+margin-top:0px;
+
+    }
+    /* div{
+border: 1px solid red;
+    } */
+    .profile{
+        margin-top: 0%;
+        display: flex;
+        padding-left: 50px;
+        margin-left: 80px;
+        padding-top: 5px;
+    }
+    .nav{
+        visibility: hidden;
+    }
+    .profile-container{
+        width: 50px;
+        height: 50px;
+      
+        border-radius:50%;
+        background:url('Rihanna.png');
+        background-size:cover;
+        border: 3px solid #ff6600;
+       
+     
+    }
+    .sidebar-container{
+     height: 70px;
+        background: black;
+        display: flex;
+        
+    
+       
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+      
+          
+      
+      }
+      .social{
+       
+        justify-content: space-between;
+        visibility: hidden;
+        
+    }
+    .profile h1{
+        font-size:25px;
+        margin-left: 10px;
+    }
+    .main {
+        text-align: center;
+        padding-right:1px ;
+        color: white;
+        padding-top: 20%;
+        width:100%;
+    }
+    .main p{
+        color: #ff6600;
+        font-size:25px;
+        padding-bottom: 0%;
+        margin-bottom:0%;
+        margin-right: 0px;
+        text-align: left;
+        margin-left: 0px;
+    }
+    .main h1{
+        font-size:80px;
+        font-weight: bolder;
+        margin: 0%;
+    }
+    .main h3{
+        font-size:30px;
+        font-weight: lighter;
+        margin-top: 0%;
+        padding-top: 0%;
+    }
+    
+}
+
+
+
